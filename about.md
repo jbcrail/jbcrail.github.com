@@ -13,6 +13,6 @@ My name is Joseph Crail, and I've worked as a software engineer for over a decad
 
 Even with an aptitude for technical topics, I've found many textbooks and papers difficult-to-read, so I strive to articulate these topics to a broad audience.
 
-Have questions, suggestions, or job opportunities? Feel free to [ask me on Twitter](https://twitter.com/jbcrail).
+Have questions, suggestions, or job opportunities? Feel free to contact me on [Twitter](https://twitter.com/jbcrail) or by email (jbcrail at gmail com).
 
 Thanks for reading!
