@@ -1,3 +1,0 @@
-This is the git repo for my blog, "[polybits]":http://polybits.net
-
-I am using Mojombo's "Jekyll":http://github.com/mojombo/jekyll to generate the static site.
