@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main %}
+  {%- set path = "/" ~ taxonomy.name %}
+  <main>
+    {%- if term %}
+    <h4>Filtering for "{{ term.name }}" (<a href="{{ get_url(path=path, lang=lang) }}">{{ trans(key="remove_filter", lang=lang) }}</a>)</h4>
+    {%- endif %}
+    <ul>
+      {% for page in term.pages %}
+        <li>
+          <time datetime='{{ page.date | date(format='%+') }}' pubdate>
+            {{ page.date | date(format=config.extra.date_format) }}
+          </time>
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </li>
+      {% else %}
+        <li>
+          {{ trans(key="no_posts", lang=lang) }}
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+{% endblock %}

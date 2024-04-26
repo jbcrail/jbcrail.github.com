@@ -1,0 +1,26 @@
+<footer>
+  <nav class="secondary">
+{%- set current_lang = config.default_language %}
+{%- if page %}
+  {%- set current_lang = page.lang %}
+{%- elif section %}
+  {%- set current_lang = section.lang %}
+{%- endif %}
+{%- if config.extra.footer_urls %}
+  {%- for item in config.extra.footer_urls %}
+    {%- if current_lang == config.default_language %}
+      {%- set title = item.name %}
+    {%- else %}
+      {%- set language_key = 'name_' ~ current_lang %}
+      {%- set title = item[language_key] %}
+    {%- endif %}
+    {%- if item.url is matching("https?://") %}
+    <a href="{{ item.url }}">{{ title }}</a>
+    {%- else %}
+    <a href="{{ get_url(path=item.url, lang=lang )}}">{{ title }}</a>
+    {%- endif %}
+  {%- endfor %}
+{%- endif %}
+  </nav>
+  <div class="copyright">&copy; 2014-2024 Joseph Crail</div>
+</footer>

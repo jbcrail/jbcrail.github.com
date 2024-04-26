@@ -1,11 +1,14 @@
----
-layout: post
-title: 365 Days of GitHub
----
++++
+title = "365 Days of GitHub"
+aliases = [
+    "/2014/08/16/365-days-of-github/"
+]
+taxonomies.tags = [
+    "github",
+]
++++
 
-<a href="https://github.com/jbcrail"><img src="/images/365-github.png" width="100%" /></a>
-
-> “A man who can't bear to share his habits is a man who needs to quit them.”
+> A man who can't bear to share his habits is a man who needs to quit them.
 > ― Stephen King, The Dark Tower
 
 It started off as a simple challenge to refamiliarize myself with areas
@@ -16,8 +19,7 @@ I rarely cover in my day job.  Inspired by the previous works of
 habit snowballed into 20,000+ lines of code, 12 programming languages,
 11 merged pull requests, and 8 new repositories.
 
-The final body of work includes
-[solutions](https://github.com/jbcrail/project-euler) to [Project Euler](https://projecteuler.net/),
+The final body of work includes solutions to [Project Euler](https://projecteuler.net/),
 a [RESTful content-addressable storage server](https://github.com/jbcrail/cas),
 a [proxy for local and remote filesystems](https://github.com/jbcrail/fsproxy),
 a [LINQ-inspired shell](https://github.com/jbcrail/crash),
@@ -63,86 +65,20 @@ Problem__ column). I do have run time performance statistics, but it didn't seem
 fair to publish the data until I reduced the startup cost for certain languages.
 I will say that Go, Rust, SML, and Haskell were very competitive with C++.
 
-<table>
-  <tr>
-    <th>Language</th>
-    <th>Lines of Code (LOC)</th>
-    <th>Solved Problems</th>
-    <th>LOC Per Problem</th>
-  </tr>
-  <tr>
-    <td>Haskell</td>
-    <td>505</td>
-    <td>37</td>
-    <td>13.6486</td>
-  </tr>
-  <tr>
-    <td>Scala</td>
-    <td>333</td>
-    <td>24</td>
-    <td>13.875</td>
-  </tr>
-  <tr>
-    <td>Clojure</td>
-    <td>1318</td>
-    <td>71</td>
-    <td>18.5634</td>
-  </tr>
-  <tr>
-    <td>Ruby</td>
-    <td>1443</td>
-    <td>73</td>
-    <td>19.7671</td>
-  </tr>
-  <tr>
-    <td>SML</td>
-    <td>264</td>
-    <td>12</td>
-    <td>22</td>
-  </tr>
-  <tr>
-    <td>Python</td>
-    <td>1828</td>
-    <td>82</td>
-    <td>22.2927</td>
-  </tr>
-  <tr>
-    <td>Erlang</td>
-    <td>1083</td>
-    <td>48</td>
-    <td>22.5625</td>
-  </tr>
-  <tr>
-    <td>PHP</td>
-    <td>1378</td>
-    <td>56</td>
-    <td>24.6071</td>
-  </tr>
-  <tr>
-    <td>Java</td>
-    <td>2005</td>
-    <td>62</td>
-    <td>32.3387</td>
-  </tr>
-  <tr>
-    <td>Rust</td>
-    <td>2420</td>
-    <td>72</td>
-    <td>33.6111</td>
-  </tr>
-  <tr>
-    <td>C++</td>
-    <td>2528</td>
-    <td>73</td>
-    <td>34.6301</td>
-  </tr>
-  <tr>
-    <td>Go</td>
-    <td>3004</td>
-    <td>82</td>
-    <td>36.6341</td>
-  </tr>
-</table>
+| Language | Lines of Code (LOC) | Solved Problems | LOC Per Problem |
+|----------|---------------------|-----------------|-----------------|
+| Haskell  | 505                 | 37              | 13.6486         |
+| Scala    | 333                 | 24              | 13.875          |
+| Clojure  | 1318                | 71              | 18.5634         |
+| Ruby     | 1443                | 73              | 19.7671         |
+| SML      | 264                 | 12              | 22              |
+| Python   | 1828                | 82              | 22.2927         |
+| Erlang   | 1083                | 48              | 22.5625         |
+| PHP      | 1378                | 56              | 24.6071         |
+| Java     | 2005                | 62              | 32.3387         |
+| Rust     | 2420                | 72              | 33.6111         |
+| C++      | 2528                | 73              | 34.6301         |
+| Go       | 3004                | 82              | 36.6341         |
 
 ### So what's next?
 

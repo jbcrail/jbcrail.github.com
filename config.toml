@@ -1,0 +1,60 @@
+title = "Joseph Crail"
+base_url = "https://crail.dev"
+author = "joseph"
+
+generate_feed = true
+feed_filename = "atom.xml"
+
+build_search_index = false
+compile_sass = false
+
+taxonomies = [
+  {name = "tags", feed = true},
+]
+
+default_language = "en"
+
+[translations]
+no_posts = "No posts yet"
+remove_filter = "clear"
+filtering_for = "Filtering for"
+made_with = "Made with"
+
+[markdown]
+highlight_code = true
+
+[extra]
+date_format="%Y-%m-%d"
+hide_made_with_line = true
+
+[[extra.main_menu]]
+name = "Home"
+url = "/"
+
+[[extra.main_menu]]
+name = "Blog"
+url = "@/blog/_index.md"
+
+[[extra.main_menu]]
+name = "Tags"
+url = "/tags"
+
+[[extra.main_menu]]
+name = "About"
+url = "@/about.md"
+
+[[extra.footer_urls]]
+name = "Calendar"
+url = "https://calendly.com/jbcrail/office-hours"
+
+[[extra.footer_urls]]
+name = "GitHub"
+url = "https://github.com/jbcrail"
+
+[[extra.footer_urls]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/jbcrail/"
+
+[[extra.footer_urls]]
+name = "Mastodon"
+url = "https://mastodon.social/@jbcrail"
