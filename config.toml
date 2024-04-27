@@ -52,6 +52,10 @@ name = "GitHub"
 url = "https://github.com/jbcrail"
 
 [[extra.footer_urls]]
+name = "Keybase"
+url = "https://keybase.io/jbcrail"
+
+[[extra.footer_urls]]
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/jbcrail/"
 
