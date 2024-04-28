@@ -15,7 +15,7 @@
       {%- set title = item[language_key] %}
     {%- endif %}
     {%- if item.url is matching("https?://") %}
-    <a href="{{ item.url }}">{{ title }}</a>
+    <a href="{{ item.url }}" rel="me">{{ title }}</a>
     {%- else %}
     <a href="{{ get_url(path=item.url, lang=lang )}}">{{ title }}</a>
     {%- endif %}
