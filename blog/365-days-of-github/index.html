@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>365 Days of GitHub | Joseph Crail</title>
+  <meta name="title" content="365 Days of GitHub">
+<meta name="description" content="" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <link rel="alternate" type="application/atom+xml" title="Joseph Crail" href="https://crail.dev/atom.xml">
+  <style>:root {
+  --content-padding: 1em;
+
+  --table-bg-color: #5871a220;
+
+  @media (prefers-color-scheme: dark) {
+    --bg-color: #333;
+    --text-color: #ddd;
+    --link-color: #8cc2dd;
+  }
+
+  @media (prefers-color-scheme: light) {
+    --bg-color: #fff;
+    --text-color: rgb(68, 68, 68);
+    --link-color: rgb(50, 115, 220);
+  }
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: serif;
+  font-size: 1em;
+  margin: auto;
+  overflow-wrap: break-word;
+  padding: var(--content-padding);
+  text-align: left;
+  word-wrap: break-word;
+}
+
+h1,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--link-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+time {
+  padding-right: 2em;
+}
+
+ul.listing {
+  margin: 0;
+  padding: 0;
+}
+
+ul.listing li {
+  display: flex;
+}
+
+blockquote {
+  border-left: 1px solid #999;
+  font-style: italic;
+  margin: 0;
+  padding-left: 1em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid var(--table-bg-color);
+}
+
+th, td {
+  padding: 0.25em 0.5em;
+}
+
+thead {
+  background-color: var(--table-bg-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--table-bg-color);
+}
+
+header {
+  block-size: fit-content;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  width: fit-content;
+}
+
+header section.logo img {
+  border-radius: 50%;
+  border: 0;
+  height: 60px;
+  width: 60px;
+}
+
+header section.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.5;
+}
+
+header section.info h1 {
+  display: inline;
+  font-size: 1.1em;
+}
+
+nav {
+  block-size: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  width: fit-content;
+}
+
+nav.primary {
+  margin: 1em 0 1em;
+}
+
+nav.taxonomy {
+  margin: 0;
+  gap: 0 0.25em;
+}
+
+nav.secondary {
+  gap: 0.75em;
+}
+
+main {
+  block-size: fit-content;
+  width: fit-content;
+}
+
+main h1 {
+  font-size: 1.5em;
+}
+
+main small {
+}
+
+footer {
+  margin: 1em 0;
+  block-size: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+footer nav {
+  font-size: 0.9em;
+}
+
+footer .copyright {
+  font-size: 0.8em;
+}
+</style>
+</head>
+<body>
+<header>
+<section class="logo">
+    <a href="/"><img src="/avatar.png" alt="avatar" /></a>
+  </section>
+  <section class="info">
+    <h1>Joseph Crail</h1>
+    <div>Mathematics, software, and stuff</div>
+  </section>
+</header>
+<nav class="primary">
+  <a href="https://crail.dev">Home</a>
+  <a href="https://crail.dev/blog/">Blog</a>
+  <a href="https://crail.dev/tags">Tags</a>
+  <a href="https://crail.dev/about/">About</a>
+</nav>
+
+  <main>
+    <h4>365 Days of GitHub</h4>
+    <p>
+      <time datetime='2014-08-16T00:00:00+00:00' pubdate>2014-08-16</time>
+    </p>
+    <p>
+        Tags:
+          <a href="https://crail.dev/tags/github/">#github</a>
+    </p>
+    <blockquote>
+<p>A man who can't bear to share his habits is a man who needs to quit them.
+― Stephen King, The Dark Tower</p>
+</blockquote>
+<p>It started off as a simple challenge to refamiliarize myself with areas
+I rarely cover in my day job.  Inspired by the previous works of
+<a href="http://ejohn.org/blog/write-code-every-day/">John Resig</a>,
+<a href="http://ryanseys.com/blog/177-days-of-github/">Ryan Seys</a>, and
+<a href="http://geoff.greer.fm/2014/01/06/365-days-of-github/">Geoff Greer</a>, my daily
+habit snowballed into 20,000+ lines of code, 12 programming languages,
+11 merged pull requests, and 8 new repositories.</p>
+<p>The final body of work includes solutions to <a href="https://projecteuler.net/">Project Euler</a>,
+a <a href="https://github.com/jbcrail/cas">RESTful content-addressable storage server</a>,
+a <a href="https://github.com/jbcrail/fsproxy">proxy for local and remote filesystems</a>,
+a <a href="https://github.com/jbcrail/crash">LINQ-inspired shell</a>,
+a <a href="https://github.com/jbcrail/quidnuncd">simple performance monitor</a>,
+a beanstalkd <a href="https://github.com/jbcrail/beanstalk-rs">library</a>,
+a <a href="https://github.com/jbcrail/vindinium-starter-erlang">library</a> for writing an
+AI bot for <a href="http://vindinium.org/">Vindinium</a>, and documentation for
+<a href="https://github.com/rust-lang/rust">Rust</a>. Other minor projects included a
+<a href="http://bl.ocks.org/jbcrail/928bfd1882df644e0ba1">visualization of local crime data</a>
+and a <a href="https://gist.github.com/jbcrail/8232863">script</a> that plots the intensity
+of accelerometer values from a Wiimote.</p>
+<h3 id="unintended-effects">Unintended effects</h3>
+<p>After writing a non-trivial amount of code in a dozen languages, I've developed a
+feel for which programming language concepts and syntax are better suited for
+certain domains, especially the mathematical and performance-critical space
+inhabited by Project Euler.</p>
+<p>When tackling a new problem, Clojure and Python were essential for testing out
+potential solutions in small incremental steps. Both are armed with a REPL, good
+libraries, and a dynamic type system. I solved many problems without worrying
+about the total run time of each solution.</p>
+<p>As the problems increased in space and time complexity, I typically switched over
+to Go and Rust in order to find a solution in a reasonable amount of time. Both
+languages balance the need for performance and quick development without getting
+sidelined by too much boilerplate or scaffolding. Even though this doesn't matter
+as much for personal projects, I especially like the attention and thought put
+into Go's and Rust's development tools.</p>
+<p>When looking back, I continuously found myself using pattern matching, list
+comprehensions, guards, closures, type inference, and traits. These features
+mapped well to mathematical domains, but readable yet compact code was a fortunate
+side-effect.</p>
+<h3 id="lies-damned-lies-and-statistics">Lies, damned lies, and statistics</h3>
+<p>Due to the breadth of the implementations, my Project Euler solutions turned into
+a mini programming language shootout. The following table shows only lines of
+code and relative expressiveness of each language (as represented by the <strong>LOC Per
+Problem</strong> column). I do have run time performance statistics, but it didn't seem
+fair to publish the data until I reduced the startup cost for certain languages.
+I will say that Go, Rust, SML, and Haskell were very competitive with C++.</p>
+<table><thead><tr><th>Language</th><th>Lines of Code (LOC)</th><th>Solved Problems</th><th>LOC Per Problem</th></tr></thead><tbody>
+<tr><td>Haskell</td><td>505</td><td>37</td><td>13.6486</td></tr>
+<tr><td>Scala</td><td>333</td><td>24</td><td>13.875</td></tr>
+<tr><td>Clojure</td><td>1318</td><td>71</td><td>18.5634</td></tr>
+<tr><td>Ruby</td><td>1443</td><td>73</td><td>19.7671</td></tr>
+<tr><td>SML</td><td>264</td><td>12</td><td>22</td></tr>
+<tr><td>Python</td><td>1828</td><td>82</td><td>22.2927</td></tr>
+<tr><td>Erlang</td><td>1083</td><td>48</td><td>22.5625</td></tr>
+<tr><td>PHP</td><td>1378</td><td>56</td><td>24.6071</td></tr>
+<tr><td>Java</td><td>2005</td><td>62</td><td>32.3387</td></tr>
+<tr><td>Rust</td><td>2420</td><td>72</td><td>33.6111</td></tr>
+<tr><td>C++</td><td>2528</td><td>73</td><td>34.6301</td></tr>
+<tr><td>Go</td><td>3004</td><td>82</td><td>36.6341</td></tr>
+</tbody></table>
+<h3 id="so-what-s-next">So what's next?</h3>
+<p>I'm not exactly sure. The daily act of committing code is ingrained at this
+point so I'll probably continue for the forseeable future. As noted by others
+who have undertaken similar challenges, the benefits have far outweighed
+any downsides.</p>
+
+  </main>
+<footer>
+  <nav class="secondary">
+    <a href="https:&#x2F;&#x2F;calendly.com&#x2F;jbcrail&#x2F;office-hours" rel="me">Calendar</a>
+    <a href="https:&#x2F;&#x2F;github.com&#x2F;jbcrail" rel="me">GitHub</a>
+    <a href="https:&#x2F;&#x2F;keybase.io&#x2F;jbcrail" rel="me">Keybase</a>
+    <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;jbcrail" rel="me">LinkedIn</a>
+    <a href="https:&#x2F;&#x2F;mastodon.social&#x2F;@jbcrail" rel="me">Mastodon</a>
+  </nav>
+  <div class="copyright">&copy; 2014-2024 Joseph Crail</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Joseph Crail</title>
+    <link rel="self" type="application/atom+xml" href="https://crail.dev/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://crail.dev"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2014-08-16T00:00:00+00:00</updated>
+    <id>https://crail.dev/atom.xml</id>
+    <entry xml:lang="en">
+        <title>365 Days of GitHub</title>
+        <published>2014-08-16T00:00:00+00:00</published>
+        <updated>2014-08-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              joseph
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://crail.dev/blog/365-days-of-github/"/>
+        <id>https://crail.dev/blog/365-days-of-github/</id>
+        
+        <content type="html" xml:base="https://crail.dev/blog/365-days-of-github/">&lt;blockquote&gt;
+&lt;p&gt;A man who can&#x27;t bear to share his habits is a man who needs to quit them.
+― Stephen King, The Dark Tower&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;It started off as a simple challenge to refamiliarize myself with areas
+I rarely cover in my day job.  Inspired by the previous works of
+&lt;a href=&quot;http:&#x2F;&#x2F;ejohn.org&#x2F;blog&#x2F;write-code-every-day&#x2F;&quot;&gt;John Resig&lt;&#x2F;a&gt;,
+&lt;a href=&quot;http:&#x2F;&#x2F;ryanseys.com&#x2F;blog&#x2F;177-days-of-github&#x2F;&quot;&gt;Ryan Seys&lt;&#x2F;a&gt;, and
+&lt;a href=&quot;http:&#x2F;&#x2F;geoff.greer.fm&#x2F;2014&#x2F;01&#x2F;06&#x2F;365-days-of-github&#x2F;&quot;&gt;Geoff Greer&lt;&#x2F;a&gt;, my daily
+habit snowballed into 20,000+ lines of code, 12 programming languages,
+11 merged pull requests, and 8 new repositories.&lt;&#x2F;p&gt;
+&lt;p&gt;The final body of work includes solutions to &lt;a href=&quot;https:&#x2F;&#x2F;projecteuler.net&#x2F;&quot;&gt;Project Euler&lt;&#x2F;a&gt;,
+a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jbcrail&#x2F;cas&quot;&gt;RESTful content-addressable storage server&lt;&#x2F;a&gt;,
+a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jbcrail&#x2F;fsproxy&quot;&gt;proxy for local and remote filesystems&lt;&#x2F;a&gt;,
+a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jbcrail&#x2F;crash&quot;&gt;LINQ-inspired shell&lt;&#x2F;a&gt;,
+a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jbcrail&#x2F;quidnuncd&quot;&gt;simple performance monitor&lt;&#x2F;a&gt;,
+a beanstalkd &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jbcrail&#x2F;beanstalk-rs&quot;&gt;library&lt;&#x2F;a&gt;,
+a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jbcrail&#x2F;vindinium-starter-erlang&quot;&gt;library&lt;&#x2F;a&gt; for writing an
+AI bot for &lt;a href=&quot;http:&#x2F;&#x2F;vindinium.org&#x2F;&quot;&gt;Vindinium&lt;&#x2F;a&gt;, and documentation for
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rust&quot;&gt;Rust&lt;&#x2F;a&gt;. Other minor projects included a
+&lt;a href=&quot;http:&#x2F;&#x2F;bl.ocks.org&#x2F;jbcrail&#x2F;928bfd1882df644e0ba1&quot;&gt;visualization of local crime data&lt;&#x2F;a&gt;
+and a &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;jbcrail&#x2F;8232863&quot;&gt;script&lt;&#x2F;a&gt; that plots the intensity
+of accelerometer values from a Wiimote.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;unintended-effects&quot;&gt;Unintended effects&lt;&#x2F;h3&gt;
+&lt;p&gt;After writing a non-trivial amount of code in a dozen languages, I&#x27;ve developed a
+feel for which programming language concepts and syntax are better suited for
+certain domains, especially the mathematical and performance-critical space
+inhabited by Project Euler.&lt;&#x2F;p&gt;
+&lt;p&gt;When tackling a new problem, Clojure and Python were essential for testing out
+potential solutions in small incremental steps. Both are armed with a REPL, good
+libraries, and a dynamic type system. I solved many problems without worrying
+about the total run time of each solution.&lt;&#x2F;p&gt;
+&lt;p&gt;As the problems increased in space and time complexity, I typically switched over
+to Go and Rust in order to find a solution in a reasonable amount of time. Both
+languages balance the need for performance and quick development without getting
+sidelined by too much boilerplate or scaffolding. Even though this doesn&#x27;t matter
+as much for personal projects, I especially like the attention and thought put
+into Go&#x27;s and Rust&#x27;s development tools.&lt;&#x2F;p&gt;
+&lt;p&gt;When looking back, I continuously found myself using pattern matching, list
+comprehensions, guards, closures, type inference, and traits. These features
+mapped well to mathematical domains, but readable yet compact code was a fortunate
+side-effect.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;lies-damned-lies-and-statistics&quot;&gt;Lies, damned lies, and statistics&lt;&#x2F;h3&gt;
+&lt;p&gt;Due to the breadth of the implementations, my Project Euler solutions turned into
+a mini programming language shootout. The following table shows only lines of
+code and relative expressiveness of each language (as represented by the &lt;strong&gt;LOC Per
+Problem&lt;&#x2F;strong&gt; column). I do have run time performance statistics, but it didn&#x27;t seem
+fair to publish the data until I reduced the startup cost for certain languages.
+I will say that Go, Rust, SML, and Haskell were very competitive with C++.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Language&lt;&#x2F;th&gt;&lt;th&gt;Lines of Code (LOC)&lt;&#x2F;th&gt;&lt;th&gt;Solved Problems&lt;&#x2F;th&gt;&lt;th&gt;LOC Per Problem&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Haskell&lt;&#x2F;td&gt;&lt;td&gt;505&lt;&#x2F;td&gt;&lt;td&gt;37&lt;&#x2F;td&gt;&lt;td&gt;13.6486&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Scala&lt;&#x2F;td&gt;&lt;td&gt;333&lt;&#x2F;td&gt;&lt;td&gt;24&lt;&#x2F;td&gt;&lt;td&gt;13.875&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Clojure&lt;&#x2F;td&gt;&lt;td&gt;1318&lt;&#x2F;td&gt;&lt;td&gt;71&lt;&#x2F;td&gt;&lt;td&gt;18.5634&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Ruby&lt;&#x2F;td&gt;&lt;td&gt;1443&lt;&#x2F;td&gt;&lt;td&gt;73&lt;&#x2F;td&gt;&lt;td&gt;19.7671&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;SML&lt;&#x2F;td&gt;&lt;td&gt;264&lt;&#x2F;td&gt;&lt;td&gt;12&lt;&#x2F;td&gt;&lt;td&gt;22&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Python&lt;&#x2F;td&gt;&lt;td&gt;1828&lt;&#x2F;td&gt;&lt;td&gt;82&lt;&#x2F;td&gt;&lt;td&gt;22.2927&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Erlang&lt;&#x2F;td&gt;&lt;td&gt;1083&lt;&#x2F;td&gt;&lt;td&gt;48&lt;&#x2F;td&gt;&lt;td&gt;22.5625&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;PHP&lt;&#x2F;td&gt;&lt;td&gt;1378&lt;&#x2F;td&gt;&lt;td&gt;56&lt;&#x2F;td&gt;&lt;td&gt;24.6071&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Java&lt;&#x2F;td&gt;&lt;td&gt;2005&lt;&#x2F;td&gt;&lt;td&gt;62&lt;&#x2F;td&gt;&lt;td&gt;32.3387&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Rust&lt;&#x2F;td&gt;&lt;td&gt;2420&lt;&#x2F;td&gt;&lt;td&gt;72&lt;&#x2F;td&gt;&lt;td&gt;33.6111&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;C++&lt;&#x2F;td&gt;&lt;td&gt;2528&lt;&#x2F;td&gt;&lt;td&gt;73&lt;&#x2F;td&gt;&lt;td&gt;34.6301&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Go&lt;&#x2F;td&gt;&lt;td&gt;3004&lt;&#x2F;td&gt;&lt;td&gt;82&lt;&#x2F;td&gt;&lt;td&gt;36.6341&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;so-what-s-next&quot;&gt;So what&#x27;s next?&lt;&#x2F;h3&gt;
+&lt;p&gt;I&#x27;m not exactly sure. The daily act of committing code is ingrained at this
+point so I&#x27;ll probably continue for the forseeable future. As noted by others
+who have undertaken similar challenges, the benefits have far outweighed
+any downsides.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
